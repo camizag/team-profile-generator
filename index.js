@@ -3,10 +3,10 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 //Templates
-const internTemp = require("./templates/intern");
-const employeeTemp = require("./templates/employee");
-const managerTemp = require("./templates/manager");
-const engineerTemp = require("./templates/engineer");
+const intern = require("./templates/intern");
+const employee = require("./templates/employee");
+const manager = require("./templates/manager");
+const engineer = require("./templates/engineer");
 
 const questions = [
     {
@@ -22,8 +22,8 @@ const questions = [
         message: "What is your email?",
         name: "mail"
     },{
-        type: "list",
-        message: "What is your role within the team?",
+        type: "input",
+        message: "What is your role withing the team?",
         name: "role",
         choices: [
             "Employee",
@@ -33,3 +33,4 @@ const questions = [
         ],
     }
 ];
+
