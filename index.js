@@ -14,49 +14,64 @@ const employee = require("./lib/employee");
 const manager = require("./lib/manager");
 const engineer = require("./lib/engineer");
 
-function addNewTeamMember() {
-    inquirer
-    .prompt([
-        {
-            type: "input",
-            message: "What'd you want to do?",
-            name: "inital choice",
-            choices: [
-                "Add an engineer",
-                "Add a manager",
-                "Add an intern",
-                "I finished creating my team"
-            ]
-        }
-    ]).then((roleSelected) => {
-    
-    })
-}
 
-const questions = [
+const managerQuestions = [
     {
         type: "input",
         message: "What is your name?",
-        name: "name"
+        name: "nameManager"
     },{
         type: "input",
         message: "What is your ID number?",
-        name: "numberId"
+        name: "numberIdManager"
     },{
         type: "input",
         message: "What is your email?",
-        name: "mail"
+        name: "mailManager"
     },{
         type: "input",
-        message: "What is your role within the team?",
-        name: "role",
-        choices: [
-            "Employee",
-            "Manager",
-            "Engineer",
-            "Intern",
-        ],
+        message: "What is your office number?",
+        name: "numberOfficeManager",
     }
-
-
 ];
+
+const internQuestions = [
+    {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "nameIntern",
+    },{
+        type: "input",
+        message: "What is the intern's ID number?",
+        name: "numberIdIntern",
+    },{
+        type: "input",
+        message: "What is the intern's email",
+        name: "mailIntern",
+    },{
+        type: "input",
+        message: "What college did the intern attend?",
+        name: "collegeIntern",
+    }
+];
+
+const engineerQuestions = [
+    {
+        type: "input",
+        message: "What is the engineer's name?",
+        name: "nameEngineer",
+    },{
+        type: "input",
+        message: "What is the engineer's ID number?",
+        name: "numberIdEngineer",
+    },{
+        type: "input",
+        message: "What is the engineer's email?",
+        name: "mailEngineer",
+    },{
+        type: "input",
+        message: "What is the engineer's Github username?",
+        name: "githubEngineer",
+    }
+];
+
