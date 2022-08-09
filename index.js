@@ -22,7 +22,6 @@ function addNewTeamMember() {
             message: "What'd you want to do?",
             name: "inital choice",
             choices: [
-                "Add an employee",
                 "Add an engineer",
                 "Add a manager",
                 "Add an intern",
