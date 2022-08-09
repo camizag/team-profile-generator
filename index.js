@@ -3,10 +3,36 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 //Templates
-const intern = require("./templates/intern");
-const employee = require("./templates/employee");
-const manager = require("./templates/manager");
-const engineer = require("./templates/engineer");
+const internHTML = require("./src/internHTML");
+const employeeHTML = require("./src/employeeHTML");
+const managerHTML = require("./src/managerHTML");
+const engineerHTML = require("./src/engineerHTML");
+
+//Classes
+const intern = require("./lib/intern");
+const employee = require("./lib/employee");
+const manager = require("./lib/manager");
+const engineer = require("./lib/engineer");
+
+function addNewTeamMember() {
+    inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "What'd you want to do?",
+            name: "inital choice",
+            choices: [
+                "Add an employee",
+                "Add an engineer",
+                "Add a manager",
+                "Add an intern",
+                "I finished creating my team"
+            ]
+        }
+    ]).then((roleSelected) => {
+    
+    })
+}
 
 const questions = [
     {
@@ -23,7 +49,7 @@ const questions = [
         name: "mail"
     },{
         type: "input",
-        message: "What is your role withing the team?",
+        message: "What is your role within the team?",
         name: "role",
         choices: [
             "Employee",
@@ -32,5 +58,6 @@ const questions = [
             "Intern",
         ],
     }
-];
 
+
+];
