@@ -1,4 +1,4 @@
-const internHTML = ({name, role, id, email, school}) => {
+const internHTML = ({name, role, numberId, mail, college}) => {
     return `
     <div class="card" style="width: 18rem;">
       <h5 class="card-header">
@@ -7,9 +7,9 @@ const internHTML = ({name, role, id, email, school}) => {
         ${role}  
       </h5>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${id}</li>
-        <li class="list-group-item">Email: ${email}</li>
-        <li class="list-group-item">school: ${school}</li>
+        <li class="list-group-item">ID: ${numberId}</li>
+        <li class="list-group-item">Email: ${mail}</li>
+        <li class="list-group-item">College: ${college}</li>
       </ul>
     </div>`
 }
