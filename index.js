@@ -3,7 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 //Templates
-const templateHTML = require("./src/templateHTML");
+const renderHTML = require("./src/templateHTML");
 const internHTML = require("./src/internHTML");
 const managerHTML = require("./src/managerHTML");
 const engineerHTML = require("./src/engineerHTML");
