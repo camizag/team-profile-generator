@@ -103,6 +103,129 @@ function createManager() {
     });
 }
 
+function createEngineer() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "What is the engineer's name?",
+            name: "nameEngineer",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            }
+        },{
+            type: "input",
+            message: "What is the engineer's ID number?",
+            name: "numberIdEngineer",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            }
+        },{
+            type: "input",
+            message: "What is the engineer's email?",
+            name: "mailEngineer",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            }
+        },{
+            type: "input",
+            message: "What is the engineer's Github username?",
+            name: "githubEngineer",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            },
+        },
+    ])
+    .then((res, err) => {
+        if (err) console.error(err);
+        const newEngineer = new Engineer (
+            res.name, res.numerId, res.mail, res.github,
+        );
+        newTeam.push(newEngineer);
+        addNewTeamMember();
+    });
+}
 
+
+function createIntern() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "What is the intern's name?",
+            name: "nameIntern",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            },
+        },{
+            type: "input",
+            message: "What is the intern's ID number?",
+            name: "numberIdIntern",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            },
+        },{
+            type: "input",
+            message: "What is the intern's email",
+            name: "mailIntern",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            },
+        },{
+            type: "input",
+            message: "What college did the intern attend?",
+            name: "collegeIntern",
+            validate: (input) => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log("There was a problem.");
+                    return false;
+                }
+            },
+        },
+    ])
+    .then((res, err) => {
+        if (err) console.error(err);
+        const newIntern = new Intern (
+            res.name, res.numberId, res.mail, res.college
+        );
+        newTeam.push(newIntern);
+        addNewTeamMember();
+    })
+}
 
 createManager();
