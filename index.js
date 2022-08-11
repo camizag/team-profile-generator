@@ -45,7 +45,7 @@ function createManager() {
         {
             type: "input",
             message: "What is your name?",
-            name: "nameManager",
+            name: "name",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -57,7 +57,7 @@ function createManager() {
         },{
             type: "input",
             message: "What is your ID number?",
-            name: "numberIdManager",
+            name: "numberId",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -69,7 +69,7 @@ function createManager() {
         },{
             type: "input",
             message: "What is your email?",
-            name: "mailManager",
+            name: "mail",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -81,7 +81,7 @@ function createManager() {
         },{
             type: "input",
             message: "What is your office number?",
-            name: "numberOfficeManager",
+            name: "numberOffice",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -108,7 +108,7 @@ function createEngineer() {
         {
             type: "input",
             message: "What is the engineer's name?",
-            name: "nameEngineer",
+            name: "name",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -120,7 +120,7 @@ function createEngineer() {
         },{
             type: "input",
             message: "What is the engineer's ID number?",
-            name: "numberIdEngineer",
+            name: "numberId",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -132,7 +132,7 @@ function createEngineer() {
         },{
             type: "input",
             message: "What is the engineer's email?",
-            name: "mailEngineer",
+            name: "mail",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -144,7 +144,7 @@ function createEngineer() {
         },{
             type: "input",
             message: "What is the engineer's Github username?",
-            name: "githubEngineer",
+            name: "github",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -171,7 +171,7 @@ function createIntern() {
         {
             type: "input",
             message: "What is the intern's name?",
-            name: "nameIntern",
+            name: "name",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -183,7 +183,7 @@ function createIntern() {
         },{
             type: "input",
             message: "What is the intern's ID number?",
-            name: "numberIdIntern",
+            name: "numberId",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -195,7 +195,7 @@ function createIntern() {
         },{
             type: "input",
             message: "What is the intern's email",
-            name: "mailIntern",
+            name: "mail",
             validate: (input) => {
                 if (input) {
                     return true;
@@ -207,7 +207,7 @@ function createIntern() {
         },{
             type: "input",
             message: "What college did the intern attend?",
-            name: "collegeIntern",
+            name: "college",
             validate: (input) => {
                 if (input) {
                     return true;
