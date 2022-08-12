@@ -275,23 +275,30 @@ function renderTeam() {
                             </ul>
                             </div>`;
 			if (newTeam[i].numberOffice) {
-				card += `
+				card += `   
+                            <ul class="list-group list-group-flush">
                             <li class="list-group-item">Office Number: ${newTeam[i].numberOffice}</li>
+                            </ul>
                             `;
 			}if (newTeam[i].github) {
 				card += `
+                            <ul class="list-group list-group-flush">
                             <li class="list-group-item">Office Number: ${newTeam[i].github}</li>
+                            </ul>
                             `;
 			}if (newTeam[i].college) {
 			card += `
+                            <ul class="list-group list-group-flush">
                             <li class="list-group-item">Office Number: ${newTeam[i].college}</li>
+                            </ul>
                             `;
 			}
 			card += `
 							</ul>			
                             </div>  
-  
-
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/	bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
                             </body>
                             </html>`;
 
